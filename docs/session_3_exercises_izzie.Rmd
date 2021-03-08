@@ -1,0 +1,252 @@
+---
+title: "Into the Tidyverse"
+subtitle: Session Three Solutions
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r global_options,error=FALSE,warning=FALSE,echo=FALSE}
+knitr::opts_chunk$set(error=FALSE,warning=FALSE,message = FALSE)
+```
+
+As always, we start by loading the tidyverse package.
+
+```{r message=FALSE}
+library(tidyverse)
+```
+
+## Back to the Basics
+
+### Arithmetic with Boolean Values
+
+#### Part 1
+
+```{r}
+5 + TRUE
+```
+
+Under-the-hood, `TRUE` is stored as `1`, and so when we use `TRUE` in an arithmetic operation, it gets converted to this numeric form.
+
+#### Part 2
+
+Likewise `FALSE` is stored as `0` so `5 + FALSE` is `5`.
+
+#### Part 3
+
+Since `TRUE` represents `1` and `FALSE` represents `0`, the sum of a logical vector will return the number of `TRUE` values.
+
+#### Part 4
+
+Similar to before, but `mean()` will give the proportion of true values.
+
+#### Part 5
+
+`FALSE < TRUE` is the same as `0 < 1` which is clearly true. This means that `FALSE` values will be sorted before `TRUE` values by default when we use `arrange()`.
+
+## The dpylr verbs
+
+### Filter
+
+#### Part 1
+
+```{r}
+filter(diamonds, price == max(price))
+```
+
+The highest price is $18,823 (currency obtained from `?diamonds`) and the carat of this diamond is 2.29.
+
+#### Part 2
+
+```{r}
+mpg_grpd <- group_by(mpg, year)
+filter(mpg_grpd, displ == min(displ))
+```
+
+There are actually multiple cars sharing the minimum engine size for each year although they are all of the same make and model.
+
+Note that we could have used a pipe (`%>%`) instead of creating `mpg_grpd`.
+
+#### Part 3
+
+```{r}
+filter(iris, Petal.Length > 6.4 | Petal.Width > 2.4)
+```
+
+### Arrange
+
+#### Part 1
+
+We actually don't need to print the tables. The function `glimpse()` will give us these types.
+
+```{r}
+glimpse(mpg)
+```
+
+```{r}
+glimpse(diamonds)
+```
+
+`class` is a character variable and so this column will be ordered alphabetically. Meanwhile, `cut` is an ordinal (ordered) variable and so will be ordered in the same way as the undersying order assigned to the column.
+
+#### Part 2
+
+```{r}
+arrange(mpg, hwy - cty)
+```
+
+### Select
+
+#### Part 1
+
+```{r}
+select(diamonds, -price)
+```
+
+#### Part 2
+
+Select the 1st, 2nd, 4th, and 11th column of the `mpg` dataset.
+
+### Mutate
+
+#### Part 1
+
+N/A
+
+#### Part 2
+
+```{r}
+mutate(mpg, trans = factor(trans))
+```
+
+#### Part 3
+
+```{r}
+mutate(mpg, is_automatic = trans == 'auto(l5)')
+```
+
+#### Part 4
+
+```{r}
+mpg_grpd <- group_by(mpg, class)
+mutate(mpg_grpd, best_in_class = hwy == max(hwy))
+```
+
+#### Part 5
+
+```{r}
+mutate(diamonds, expensive = price > quantile(price)[3])
+```
+
+### Summarise
+
+#### Part 1
+
+```{r}
+summarise(iris,
+          Petal.Length.Median = median(Petal.Length),
+          Petal.Width.Median = median(Petal.Width),
+          Sepal.Length.Median = median(Sepal.Length),
+          Sepal.Width.Median = median(Sepal.Width))
+```
+
+There is actually an easier way to do this using `summarise_at()` though this set of functions can be quite difficult to get your head around.
+
+#### Part 2
+
+```{r}
+diamonds %>%
+  group_by(cut) %>%
+  summarise(min(price))
+```
+
+#### Part 3
+
+```{r}
+airquality %>%
+  group_by(Month) %>%
+  summarise(MeanOzone = mean(Ozone, na.rm = TRUE))
+```
+
+#### Part 4
+
+```{r}
+diamonds %>%
+  group_by(cut, color) %>%
+  summarise(range = diff(range(carat)))
+```
+
+### Pipelines
+
+#### Part 1
+
+```{r}
+mpg %>%
+  filter(class != '2-seater') %>%
+  mutate(efficiency = (cty + hwy) / 2) %>%
+  group_by(manufacturer) %>%
+  summarise(max_efficiency = max(efficiency)) %>%
+  arrange(desc(max_efficiency))
+```
+
+#### Part 2
+
+```{r}
+iris %>%
+  mutate(Petal.Area = Petal.Width * Petal.Length,
+         Sepal.Area = Sepal.Width * Sepal.Length) %>%
+  ggplot(aes(x = Petal.Area, y = Sepal.Area, col = Species)) +
+    geom_point() +
+    geom_smooth(method = 'lm')
+```
+
+#### Part 3
+
+N/A
+
+## Going Beyond
+
+### Ranking
+
+#### Part 1
+
+Done.
+
+#### Part 2
+
+A dense rank makes the most sense here since we want to select all days with the second highest for each month.
+
+```{r}
+airquality %>%
+  group_by(Month) %>%
+  # low values have low rank so negate total_rainfall
+  mutate(solar_rank = dense_rank(-Solar.R)) %>%
+  filter(solar_rank == 2) %>%
+  # optionally remove ranking column
+  select(-solar_rank)
+```
+
+#### Part 3
+
+```{r}
+mpg %>%
+  group_by(year) %>%
+  mutate(mileage_rank = dense_rank(cty)) %>%
+  filter(mileage_rank == 1) %>%
+  # we no longer need the rank column
+  select(-mileage_rank)
+```
+
+### Un-grouping
+
+#### Part 1
+
+We recieve the error ``Error: Column `Class` can't be modified because it's a grouping variable``.
+
+#### Part 2
+
+The error occurs when we run the `mutate` function.
+
+#### Part 3
+
+The problem is that we didn't ungroup before applying the mutate. We are therefore still grouped by `Class` and `Age` which means that we are not allowed to modify either of these until we have ungrouped.
