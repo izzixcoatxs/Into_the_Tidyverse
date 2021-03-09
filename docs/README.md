@@ -1,4 +1,3 @@
-_This repository is best accessed through its website, [www.intothetidyverse.com](https://www.intothetidyverse.com)._
 
 Navigation:
 
