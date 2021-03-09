@@ -1,4 +1,4 @@
-_This repository is best accessed through its website, [www.intothetidyverse.com](https://www.intothetidyverse.com)._
+_This repository is best accessed through its website, [www.intothetidyverse_az_code_club.com](www.intothetidyverse_az_code_club.com)._
 
 Navigation:
 
