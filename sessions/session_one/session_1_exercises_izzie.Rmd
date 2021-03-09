@@ -2,19 +2,10 @@
 title: "Into the Tidyverse"
 subtitle: Session One Exercises
 output: html_notebook
-knit: (function(input_file, encoding) {
-  out_dir <- 'docs';
-  rmarkdown::render(input_file,
- encoding=encoding,
- output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 ---
-
 
 Remember, before you can use the tidyverse, you need to load the package.
 
-```{r global_options,error=FALSE,warning=FALSE,echo=FALSE}
-knitr::opts_chunk$set(error=FALSE,warning=FALSE,message = FALSE)
-```
 
 ```{r message=FALSE,error=FALSE,warning=FALSE,message = FALSE,results=FALSE}
 library(tidyverse)
