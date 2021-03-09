@@ -4,9 +4,10 @@ subtitle: Session Five Solutions
 output: html_notebook
 ---
 
+
 As always, we start by loading the tidyverse package.
 
-```{r message=FALSE}
+```{r message=FALSE,warning=FALSE,results=FALSE}
 library(tidyverse)
 ```
 
