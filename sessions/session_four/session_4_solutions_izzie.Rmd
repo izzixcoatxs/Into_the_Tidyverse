@@ -4,13 +4,9 @@ subtitle: Session Four Solutions
 output: html_notebook
 ---
 
-```{r global_options,error=FALSE,warning=FALSE,echo=FALSE}
-knitr::opts_chunk$set(error=FALSE,warning=FALSE,message = FALSE)
-```
-
 As always, we start by loading the tidyverse package.
 
-```{r message=FALSE}
+```{r message=FALSE, result=FALSE}
 library(tidyverse)
 ```
 
@@ -180,7 +176,6 @@ read_csv('data/olympics.csv', col_types = cols(Year = col_integer())) %>%
 ```{r}
 library(nycflights13)
 ```
-
 ##### Part 2
 
 Done.

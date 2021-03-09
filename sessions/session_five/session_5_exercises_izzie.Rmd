@@ -4,9 +4,6 @@ subtitle: Session Five Exercises
 output: html_notebook
 ---
 
-```{r global_options,error=FALSE,warning=FALSE,echo=FALSE}
-knitr::opts_chunk$set(error=FALSE,warning=FALSE,message = FALSE)
-```
 
 Remember, before you can use the tidyverse, you need to load the package.
 
