@@ -4,10 +4,6 @@ subtitle: Session Three Solutions
 output: html_notebook
 ---
 
-```{r global_options,error=FALSE,warning=FALSE,echo=FALSE}
-knitr::opts_chunk$set(error=FALSE,warning=FALSE,message = FALSE)
-```
-
 As always, we start by loading the tidyverse package.
 
 ```{r message=FALSE}
