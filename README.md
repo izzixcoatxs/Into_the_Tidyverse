@@ -56,47 +56,47 @@ Below you can find links to the content for each session. Note, that when attemp
 
 ### Session One
 
-* [Presentation](https://izzie1234i.github.io/into-the-tidyverse-izzie/sessions/session_one/izzie_session_one_a&b_presentation.pptx)
+* [Presentation](https://izzie1234i.github.io/Into_the_Tidyverse/sessions/session_one/izzie_session_one_a&b_presentation.pptx)
 
-* [Exercises](https://izzie1234i.github.io/into-the-tidyverse-izzie/sessions/session_one/session_1_exercises_izzie.nb.html)
+* [Exercises](https://izzie1234i.github.io/Into_the_Tidyverse/sessions/session_one/session_1_exercises_izzie.nb.html)
 
-* [Solutions](https://izzie1234i.github.io/into-the-tidyverse-izzie/sessions/session_one/session_1_solutions_izzie.nb.html)
+* [Solutions](https://izzie1234i.github.io/Into_the_Tidyverse/sessions/session_one/session_1_solutions_izzie.nb.html)
 
 ### Session Two
 
-* [Presentation](https://izzie1234i.github.io/into-the-tidyverse-izzie/sessions/session_two/izzie_session_two_a&b_presentation.pptx)
+* [Presentation](https://izzie1234i.github.io/Into_the_Tidyverse/sessions/session_two/izzie_session_two_a&b_presentation.pptx)
 
-* [Exercises](https://izzie1234i.github.io/into-the-tidyverse-izzie/sessions/session_two/session_2_exercises_izzie.nb.html)
+* [Exercises](https://izzie1234i.github.io/Into_the_Tidyverse/sessions/session_two/session_2_exercises_izzie.nb.html)
 
-* [Solutions](https://izzie1234i.github.io/into-the-tidyverse-izzie/sessions/session_two/session_2_solutions_izzie.nb.html)
+* [Solutions](https://izzie1234i.github.io/Into_the_Tidyverse/sessions/session_two/session_2_solutions_izzie.nb.html)
 
-* [Data](https://izzie1234i.github.io/into-the-tidyverse-izzie/sessions/session_two/data)
+* [Data](https://izzie1234i.github.io/Into_the_Tidyverse/sessions/session_two/data)
 
 ### Session Three
 
-* [Presentation](https://izzie1234i.github.io/into-the-tidyverse-izzie/sessions/session_three/izzie_session_three_a&b_presentation.pptx)
+* [Presentation](https://izzie1234i.github.io/Into_the_Tidyverse/sessions/session_three/izzie_session_three_a&b_presentation.pptx)
 
-* [Exercises](https://izzie1234i.github.io/into-the-tidyverse-izzie/sessions/session_three/session_3_exercises_izzie.nb.html)
+* [Exercises](https://izzie1234i.github.io/Into_the_Tidyverse/sessions/session_three/session_3_exercises_izzie.nb.html)
 
-* [Solutions](https://izzie1234i.github.io/into-the-tidyverse-izzie/sessions/session_three/session_3_solutions_izzie.nb.html)
+* [Solutions](https://izzie1234i.github.io/Into_the_Tidyverse/sessions/session_three/session_3_solutions_izzie.nb.html)
 
 ### Session Four
 
-* [Presentation](https://izzie1234i.github.io/into-the-tidyverse-izzie/sessions/session_four/izzie_session_four_a&b_presentation.pptx)
+* [Presentation](https://izzie1234i.github.io/Into_the_Tidyverse/sessions/session_four/izzie_session_four_a&b_presentation.pptx)
 
-* [Exercises](https://izzie1234i.github.io/into-the-tidyverse-izzie/sessions/session_four/session_4_exercises_izzie.nb.html)
+* [Exercises](https://izzie1234i.github.io/Into_the_Tidyverse/sessions/session_four/session_4_exercises_izzie.nb.html)
 
-* [Solutions](https://izzie1234i.github.io/into-the-tidyverse-izzie/sessions/session_four/session_4_solutions_izzie.nb.html)
+* [Solutions](https://izzie1234i.github.io/Into_the_Tidyverse/sessions/session_four/session_4_solutions_izzie.nb.html)
 
-* [Data](https://izzie1234i.github.io/into-the-tidyverse-izzie/sessions/session_four/data)
+* [Data](https://izzie1234i.github.io/Into_the_Tidyverse/sessions/session_four/data)
 
 ### Session Five
 
-* [Presentation](https://izzie1234i.github.io/into-the-tidyverse-izzie/sessions/session_five/izzie_session_five_a&b_presentation.pptx)
+* [Presentation](https://izzie1234i.github.io/Into_the_Tidyverse/sessions/session_five/izzie_session_five_a&b_presentation.pptx)
 
-* [Exercises](https://izzie1234i.github.io/into-the-tidyverse-izzie/sessions/session_five/session_5_exercises_izzie.nb.html)
+* [Exercises](https://izzie1234i.github.io/Into_the_Tidyverse/sessions/session_five/session_5_exercises_izzie.nb.html)
 
-* [Solutions](https://izzie1234i.github.io/into-the-tidyverse-izzie/sessions/session_five/session_5_solutions_izzie.nb.html)
+* [Solutions](https://izzie1234i.github.io/Into_the_Tidyverse/sessions/session_five/session_5_solutions_izzie.nb.html)
 
 ## Help
 
