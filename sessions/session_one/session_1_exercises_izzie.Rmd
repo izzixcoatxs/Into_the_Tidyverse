@@ -1,7 +1,9 @@
 ---
 title: "Into the Tidyverse"
 subtitle: Session One Exercises
-output: html_notebook
+output:
+  html_document:
+    df_print: paged
 ---
 
 Remember, before you can use the tidyverse, you need to load the package.
