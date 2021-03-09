@@ -11,7 +11,7 @@ Navigation:
 
 **Shameless Plug Warning**
 
-This course has been modified for Az code club from the 'into the tidyverse' course written by [Tim Hardgreaves](https://www.linkedin.com/in/tim-hargreaves/). These resources took over one hundred hours to develop. If you find them useful, please consider connecting with him on [LinkedIn](https://www.linkedin.com/in/tim-hargreaves/) and endorsing him for R, Teaching, and Communication.
+This course has been modified for AZ code club from the 'into the tidyverse' course written by [Tim Hardgreaves](https://www.linkedin.com/in/tim-hargreaves/). These resources took over one hundred hours to develop. If you find them useful, please consider connecting with him on [LinkedIn](https://www.linkedin.com/in/tim-hargreaves/) and endorsing him for R, Teaching, and Communication.
 
 ## FAQs
 
