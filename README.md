@@ -68,7 +68,7 @@ Below you can find links to the content for each session. Note, that when attemp
 
 * [Solutions](https://izzie1234i.github.io/Into_the_Tidyverse/sessions/session_two/session_2_solutions_izzie.nb.html)
 
-* [Data](https://izzie1234i.github.io/Into_the_Tidyverse/sessions/session_two/data)
+* [Data](https://github.com/izzie1234i/into-the-tidyverse/tree/master/resources/session_two/data)
 
 ### Session Three
 
@@ -86,7 +86,7 @@ Below you can find links to the content for each session. Note, that when attemp
 
 * [Solutions](https://izzie1234i.github.io/Into_the_Tidyverse/sessions/session_four/session_4_solutions_izzie.nb.html)
 
-* [Data](https://izzie1234i.github.io/Into_the_Tidyverse/sessions/session_four/data)
+* [Data](https://github.com/izzie1234i/into-the-tidyverse/tree/master/resources/session_four/data)
 
 ### Session Five
 
@@ -109,4 +109,5 @@ If you are use RStudio cloud, you will need to open the `Files` panel and select
 ### General Help
 
 Please feel free to contact me [here](https://www.linkedin.com/in/isabelle-coates-774500192/) for any questions you may have. 
+
 
